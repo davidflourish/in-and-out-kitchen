@@ -25,10 +25,10 @@ export const Footer: React.FC = () => {
   const handleSecretClick = () => {
     const newCount = clickCount + 1;
     setClickCount(newCount);
-    
+
     // Reset after 3 seconds
     setTimeout(() => setClickCount(0), 3000);
-    
+
     // Open admin login after 5 rapid clicks
     if (newCount >= 5) {
       setAdminLoginOpen(true);
@@ -96,7 +96,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-white/70">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#FFD700] flex-shrink-0 mt-0.5" />
-                <p>123 Allen Avenue, Ikeja, Lagos, Nigeria</p>
+                <p>KLM 4 Ondo Road, opp. Barracks First Gate, Akure 340001, Ondo</p>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#FFD700] flex-shrink-0 mt-0.5" />
@@ -104,7 +104,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#FFD700] flex-shrink-0 mt-0.5" />
-                <p>hello@inandoutkitchen.ng</p>
+                <p>dakinsik@gmail.com</p>
               </div>
             </div>
           </div>
@@ -200,10 +200,10 @@ export const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <AdminLogin 
-        isOpen={adminLoginOpen} 
-        onClose={() => setAdminLoginOpen(false)} 
-        onLogin={handleAdminLogin} 
+      <AdminLogin
+        isOpen={adminLoginOpen}
+        onClose={() => setAdminLoginOpen(false)}
+        onLogin={handleAdminLogin}
       />
     </footer>
   );
